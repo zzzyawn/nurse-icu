@@ -436,6 +436,9 @@ nav a:hover::after {
   min-width: 0; /* Allow shrinking */
   word-wrap: break-word;
   overflow-wrap: break-word;
+  display: block !important; /* Force visibility */
+  background: rgba(255, 0, 0, 0.1); /* Temporary debug background */
+  border: 2px solid red; /* Temporary debug border */
 }
 
 .sidebar-right {
@@ -443,6 +446,9 @@ nav a:hover::after {
   min-width: 0; /* Allow shrinking */
   word-wrap: break-word;
   overflow-wrap: break-word;
+  display: block !important; /* Force visibility */
+  background: rgba(0, 0, 255, 0.1); /* Temporary debug background */
+  border: 2px solid blue; /* Temporary debug border */
 }
 
 /* Main Layout */
@@ -456,10 +462,6 @@ nav a:hover::after {
 /* Main Content Positioning */
 .main-content {
   grid-column: 2;
-}
-
-.sidebar-right {
-  grid-column: 3;
 }
 
 /* Full width elements that span all columns */
