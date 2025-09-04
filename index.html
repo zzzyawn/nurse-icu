@@ -12,11 +12,33 @@
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nurse.ICU - Real Resources for Real Nurses | NCLEX Prep & Clinical Tools</title>
-  <meta name="description" content="Real Resources for Real Nurses: Unfiltered, practical nursing resources including NCLEX prep, clinical references, continuing education, and tools for current practice."
-  <meta name="keywords" content="nursing resources, NCLEX prep, nursing school, clinical tools, continuing education, nursing students, registered nurse, healthcare">
-  <link rel="stylesheet" href="assets/style.css">
+  <title>Nursing Resources, NCLEX Prep & Clinical Tools | Nurse.ICU</title>
+  <meta name="description" content="Free nursing resources for students and professionals. NCLEX preparation, clinical references, continuing education, burnout prevention, and career advancement tools.">
+  <meta name="keywords" content="nursing resources, NCLEX preparation, nursing students, clinical references, nursing burnout, continuing education nurses, nursing career advancement">
+  <meta name="author" content="Nurse.ICU">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Geographic targeting -->
+  <meta name="geo.region" content="US">
+  <meta name="geo.placename" content="United States">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nurse.icu/">
+  <meta property="og:title" content="Nursing Resources, NCLEX Prep & Clinical Tools | Nurse.ICU">
+  <meta property="og:description" content="Free nursing resources for students and professionals. NCLEX preparation, clinical references, continuing education, burnout prevention, and career advancement tools.">
+  <meta property="og:image" content="https://nurse.icu/assets/images/nurse-icu.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://nurse.icu/">
+  <meta property="twitter:title" content="Nursing Resources, NCLEX Prep & Clinical Tools | Nurse.ICU">
+  <meta property="twitter:description" content="Free nursing resources for students and professionals. NCLEX preparation, clinical references, continuing education, burnout prevention, and career advancement tools.">
+  <meta property="twitter:image" content="https://nurse.icu/assets/images/nurse-icu.png">
+  
   <link rel="canonical" href="https://nurse.icu/">
+  <meta name="keywords" content="nursing resources, NCLEX prep, nursing school, clinical tools, continuing education, nursing students, registered nurse, healthcare, ICU nursing, critical care, CCRN, nursing certifications">
+  <link rel="stylesheet" href="assets/style.css">
   <meta property="og:title" content="Nurse.ICU - Real Resources for Real Nurses">
   <meta property="og:description" content="Real Resources for Real Nurses: Unfiltered, practical nursing resources including NCLEX prep, clinical references, and tools for current practice.">
   <meta property="og:type" content="website">
@@ -27,18 +49,35 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
+    "@type": "WebSite",
     "name": "Nurse.ICU",
-    "description": "Essential nursing resources for students and professionals including NCLEX preparation, clinical references, and continuing education.",
+    "description": "Comprehensive nursing resources for students and professionals",
     "url": "https://nurse.icu/",
-    "educationalCredentialAwarded": "Nursing Education Resources",
-    "audience": {
-      "@type": "EducationalAudience",
-      "educationalRole": ["student", "professional"]
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://nurse.icu/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
     },
-    "provider": {
-      "@type": "Organization",
-      "name": "Nurse.ICU"
+    "mainEntity": {
+      "@type": "EducationalOrganization",
+      "name": "Nurse.ICU",
+      "description": "Essential nursing resources for students and professionals including NCLEX preparation, clinical references, and continuing education.",
+      "url": "https://nurse.icu/",
+      "educationalCredentialAwarded": "Nursing Education Resources",
+      "audience": [
+        {
+          "@type": "EducationalAudience",
+          "educationalRole": "student"
+        },
+        {
+          "@type": "EducationalAudience", 
+          "educationalRole": "professional"
+        }
+      ],
+      "provider": {
+        "@type": "Organization",
+        "name": "Nurse.ICU"
+      }
     }
   }
   </script>
@@ -66,6 +105,21 @@
     </nav>
   </div>
 </header>
+
+<!-- Breadcrumb Navigation -->
+<nav aria-label="Breadcrumb" class="breadcrumb-nav">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        ICU Nursing Resources
+      </li>
+    </ol>
+  </div>
+</nav>
+
 <main>
   <!-- Horizontal Scrolling Hero Section -->
   <div class="hero-carousel-container">
@@ -76,7 +130,7 @@
             <img src="assets/images/hero-banner.png" alt="Nurse at work - Real nursing professionals" class="hero-image-full">
           </div>
           <div class="hero-text">
-            <h1>Nurse.ICU - Real Resources for Real Nurses</h1>
+            <h1>NURSE.ICU</h1>
             <p class="lead">Cut through the fluff and get what you actually need. Unfiltered, practical resources for surviving and thriving in nursing—from study guides to career advice to the tools that matter.</p>
           </div>
         </div>
@@ -84,10 +138,10 @@
       <div class="hero-slide">
         <div class="hero-content">
           <div class="hero-image-container">
-            <img src="assets/images/nclex-prep.png" alt="NCLEX preparation and study resources" class="hero-image-full">
+            <img src="assets/images/nclex-prep.png" alt="NCLEX preparation and study resources" class="hero-image-full" loading="lazy">
           </div>
           <div class="hero-text">
-            <h1>Master Your NCLEX</h1>
+            <h2>Master Your NCLEX</h2>
             <p class="lead">Evidence-based study strategies and practice questions that actually prepare you for the real exam. No fluff, just results.</p>
           </div>
         </div>
@@ -95,10 +149,10 @@
       <div class="hero-slide">
         <div class="hero-content">
           <div class="hero-image-container">
-            <img src="assets/images/bedside-burnout.png" alt="Avoiding nursing burnout and career growth" class="hero-image-full">
+            <img src="assets/images/bedside-burnout.png" alt="Avoiding nursing burnout and career growth" class="hero-image-full" loading="lazy">
           </div>
           <div class="hero-text">
-            <h1>Beat Bedside Burnout</h1>
+            <h2>Beat Bedside Burnout</h2>
             <p class="lead">Practical strategies for surviving the chaos, advancing your career, and maintaining your sanity in modern healthcare.</p>
           </div>
         </div>
@@ -164,10 +218,10 @@
           <!-- Essential Resources Card - Full Width -->
           <div class="card">
             <h2>Essential Resources</h2>
-            <p>The stuff you actually need, not the stuff they think you need.</p>
+            <p>The stuff you actually need, not the stuff they think you need. Whether you're preparing for the <a href="nclex-prep.html">NCLEX exam</a>, need <a href="clinical-references.html">clinical references</a>, or dealing with <a href="nursing-burnout.html">workplace burnout</a>, we've got practical resources that work.</p>
             <div class="resource-grid">
               <a href="nclex-prep.html" class="resource-item">
-                <img src="assets/images/test-prep.png" alt="NCLEX preparation study materials" class="resource-image">
+                <img src="assets/images/test-prep.png" alt="NCLEX preparation study materials" class="resource-image" loading="lazy">
                 <div class="resource-item-content">
                   <h3>NCLEX Survival Guide</h3>
                   <p>Pass the test, start your career, begin questioning your life choices. Everything you need to get through the exam that stands between you and actual nursing.</p>
@@ -179,7 +233,7 @@
                 </div>
               </a>
               <a href="clinical-references.html" class="resource-item">
-                <img src="assets/images/clinical-refs.png" alt="Clinical reference materials and cheat sheets" class="resource-image">
+                <img src="assets/images/clinical-refs.png" alt="Clinical reference materials and cheat sheets" class="resource-image" loading="lazy">
                 <div class="resource-item-content">
                   <h3>Clinical Cheat Sheets</h3>
                   <p>Quick references for when you need to look competent but your brain has turned to mush after a 12-hour shift. Drug info, lab values, and protocols that actually matter.</p>
@@ -191,7 +245,7 @@
                 </div>
               </a>
               <a href="nursing-skills.html" class="resource-item">
-                <img src="assets/images/nursing-skills.png" alt="Nursing skills and clinical procedures" class="resource-image">
+                <img src="assets/images/nursing-skills.png" alt="Nursing skills and clinical procedures" class="resource-image" loading="lazy">
                 <div class="resource-item-content">
                   <h3>Skills That Matter</h3>
                   <p>Step-by-step guides for procedures you'll actually do, not the theoretical nonsense from textbooks. Real techniques for real situations.</p>
@@ -203,7 +257,7 @@
                 </div>
               </a>
               <a href="nursing-burnout.html" class="resource-item">
-                <img src="assets/images/bedside-burnout.png" alt="Avoiding bedside burnout and career advancement" class="resource-image">
+                <img src="assets/images/bedside-burnout.png" alt="Avoiding bedside burnout and career advancement" class="resource-image" loading="lazy">
                 <div class="resource-item-content">
                   <h3>Avoiding Bedside Burnout</h3>
                   <p>Rest & Relaxation for RNs: Comprehensive strategies to survive the bedside without losing your sanity or career goals. From stress management and self-care that actually works to advancement opportunities that get you off the floor.</p>
@@ -225,21 +279,21 @@
               <p>Because "lifelong learning" sounds better than "you'll never stop studying."</p>
               <div class="resource-grid">
                 <a href="nursing-education.html" class="resource-item">
-                  <img src="assets/images/nursing-education.png" alt="Nursing education and degree programs" class="resource-image-small">
+                  <img src="assets/images/nursing-education.png" alt="Nursing education and degree programs" class="resource-image-small" loading="lazy">
                   <div class="resource-item-content">
                     <h3>More Education (Seriously?)</h3>
                     <p>RN to BSN, MSN, and beyond. Because apparently your current degree isn't enough. Navigate the maze of continuing education requirements.</p>
                   </div>
                 </a>
                 <a href="nursing-ceus.html" class="resource-item">
-                  <img src="assets/images/nursing-ceus.png" alt="Continuing education units and license renewal" class="resource-image-small">
+                  <img src="assets/images/nursing-ceus.png" alt="Continuing education units and license renewal" class="resource-image-small" loading="lazy">
                   <div class="resource-item-content">
                     <h3>CEU Treadmill</h3>
                     <p>Keep your license current with continuing education requirements. BLS, ACLS, and whatever other acronyms they've invented this year.</p>
                   </div>
                 </a>
                 <a href="career-advancement.html" class="resource-item">
-                  <img src="assets/images/career-advancement.png" alt="Nursing career advancement and leadership" class="resource-image-small">
+                  <img src="assets/images/career-advancement.png" alt="Nursing career advancement and leadership" class="resource-image-small" loading="lazy">
                   <div class="resource-item-content">
                     <h3>Climbing the Ladder</h3>
                     <p>Leadership development, interview strategies, and salary negotiation tips. Because someone has to make the decisions around here.</p>
@@ -253,21 +307,21 @@
               <p>Because credentials matter when you're trying to prove you know what you're doing.</p>
               <div class="resource-grid">
                 <a href="specialty-certifications.html" class="resource-item">
-                  <img src="assets/images/specialty-certifications.png" alt="Specialty nursing certifications and badges" class="resource-image-small">
+                  <img src="assets/images/specialty-certifications.png" alt="Specialty nursing certifications and badges" class="resource-image-small" loading="lazy">
                   <div class="resource-item-content">
                     <h3>Alphabet Soup Certifications</h3>
                     <p>CCRN, CMSRN, CEN - collect them all! Specialty certifications that actually mean something (and might pay more).</p>
                   </div>
                 </a>
                 <a href="nursing-products.html" class="resource-item">
-                  <img src="assets/images/nursing-products.png" alt="Nursing equipment and product reviews" class="resource-image-small">
+                  <img src="assets/images/nursing-products.png" alt="Nursing equipment and product reviews" class="resource-image-small" loading="lazy">
                   <div class="resource-item-content">
                     <h3>Gear That Works</h3>
                     <p>Honest reviews of scrubs, stethoscopes, and shoes that won't destroy your feet during a 12-hour shift. No sponsored content BS.</p>
                   </div>
                 </a>
                 <a href="nursing-legal.html" class="resource-item">
-                  <img src="assets/images/nursing-legal.png" alt="Nursing legal issues and malpractice protection" class="resource-image-small">
+                  <img src="assets/images/nursing-legal.png" alt="Nursing legal issues and malpractice protection" class="resource-image-small" loading="lazy">
                   <div class="resource-item-content">
                     <h3>Legal Self-Defense</h3>
                     <p>Malpractice insurance, documentation, and staying out of legal trouble. Because good intentions don't protect you from lawsuits.</p>
@@ -280,6 +334,7 @@
           <!-- Interstitial Content Block -->
           <div class="content-block">
             <p><em id="rotating-joke">"Coffee: because anger management is too expensive."</em></p>
+            <p class="interstitial-links">Need a study break? Check out our <a href="nursing-burnout.html">burnout prevention tips</a> or explore <a href="specialty-certifications.html">specialty nursing certifications</a> for career advancement.</p>
             <!-- Ad placement area -->
           </div>
         </div>
