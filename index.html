@@ -38,7 +38,7 @@
   
   <link rel="canonical" href="https://nurse.icu/">
   <meta name="keywords" content="nursing resources, NCLEX prep, nursing school, clinical tools, continuing education, nursing students, registered nurse, healthcare, ICU nursing, critical care, CCRN, nursing certifications">
-  <link rel="stylesheet" href="assets/style.css?v=2">
+  <link rel="stylesheet" href="assets/style.css?v=3">
   <meta property="og:title" content="Nurse.ICU - Real Resources for Real Nurses">
   <meta property="og:description" content="Real Resources for Real Nurses: Unfiltered, practical nursing resources including NCLEX prep, clinical references, and tools for current practice.">
   <meta property="og:type" content="website">
@@ -173,40 +173,40 @@
   <div class="three-column-container">
         <!-- Left Sidebar -->
         <div class="sidebar-left">
-          <div class="ad-block content-block">
+          <div class="info-widget content-block">
             <h4>Quick Tips</h4>
             <p><em>"Always double-check your patient's allergies before administering any medication."</em></p>
           </div>
           
-          <div class="ad-block content-block ad-rotating" data-ad-group="career">
+          <div class="info-widget content-block widget-rotating" data-widget-group="career">
             <h4>Career Spotlight</h4>
             <p>Explore specialized nursing roles that could be your next career move.</p>
             <a href="career-advancement.html" class="btn-small">Learn More</a>
           </div>
           
-          <div class="ad-block content-block small-ad">
+          <div class="info-widget content-block small-widget">
             <h5>💊 Drug Guide</h5>
             <p>Quick reference for common medications and dosages.</p>
           </div>
           
-          <div class="ad-block content-block ad-rotating" data-ad-group="education">
+          <div class="info-widget content-block widget-rotating" data-widget-group="education">
             <h4>Continuing Education</h4>
             <p>Get your CEUs online - ANCC approved courses starting at $19.99</p>
             <a href="#" class="btn-small">View Courses</a>
           </div>
           
-          <div class="ad-block content-block large-ad">
+          <div class="info-widget content-block large-widget">
             <h4>🩺 Equipment Reviews</h4>
             <p>Find the best stethoscopes, BP cuffs, and medical supplies. Real reviews from real nurses.</p>
             <div class="rating">⭐⭐⭐⭐⭐ 4.8/5</div>
           </div>
           
-          <div class="ad-block content-block small-ad">
+          <div class="info-widget content-block small-widget">
             <h5>Study Buddy</h5>
             <p>Join study groups in your area</p>
           </div>
           
-          <div class="ad-block content-block ad-rotating" data-ad-group="wellness">
+          <div class="info-widget content-block widget-rotating" data-widget-group="wellness">
             <h4>Nurse Wellness</h4>
             <p>Self-care isn't selfish. Join our wellness program designed specifically for healthcare workers.</p>
             <a href="#" class="btn-small">Start Free Trial</a>
@@ -341,46 +341,46 @@
 
         <!-- Right Sidebar -->
         <div class="sidebar-right">
-          <div class="ad-block content-block">
+          <div class="info-widget content-block">
             <h4>Latest Updates</h4>
             <p>New NCLEX changes for 2025 - what you need to know.</p>
             <a href="nclex-prep.html" class="btn-small">Read More</a>
           </div>
           
-          <div class="ad-block content-block small-ad">
+          <div class="info-widget content-block small-widget">
             <h5>📱 Nursing Apps</h5>
             <p>Essential mobile apps every nurse needs</p>
           </div>
           
-          <div class="ad-block content-block ad-rotating" data-ad-group="insurance">
+          <div class="info-widget content-block widget-rotating" data-widget-group="insurance">
             <h4>Professional Liability</h4>
             <p>Protect your career with malpractice insurance starting at $98/year</p>
             <a href="#" class="btn-small">Get Quote</a>
           </div>
           
-          <div class="ad-block content-block">
+          <div class="info-widget content-block">
             <h4>Community</h4>
             <p>Connect with fellow nurses and share your experiences.</p>
           </div>
           
-          <div class="ad-block content-block large-ad">
+          <div class="info-widget content-block large-widget">
             <h4>🎯 Job Board</h4>
             <p>Premium nursing positions in your area. ICU, ER, OR, and more. Sign-on bonuses up to $15,000!</p>
             <a href="#" class="btn-small">Browse Jobs</a>
           </div>
           
-          <div class="ad-block content-block small-ad">
+          <div class="info-widget content-block small-widget">
             <h5>Shift Swaps</h5>
             <p>Trade shifts with nearby nurses</p>
           </div>
           
-          <div class="ad-block content-block ad-rotating" data-ad-group="scrubs">
+          <div class="info-widget content-block widget-rotating" data-widget-group="scrubs">
             <h4>Comfort Scrubs</h4>
             <p>Premium scrubs that actually fit. Free shipping on orders over $75</p>
             <a href="#" class="btn-small">Shop Now</a>
           </div>
           
-          <div class="ad-block content-block">
+          <div class="info-widget content-block">
             <h4>💬 Weekly Poll</h4>
             <p><strong>What's your biggest workplace challenge?</strong></p>
             <div class="poll-options">
@@ -502,8 +502,8 @@ displayRandomJoke();
 // Rotate joke every 8 seconds
 setInterval(displayRandomJoke, 8000);
 
-// Ad rotation functionality
-const adGroups = {
+// Widget rotation functionality
+const widgetGroups = {
   career: [
     {
       title: "Career Spotlight",
@@ -606,32 +606,32 @@ const adGroups = {
   ]
 };
 
-function rotateAds() {
-  const rotatingAds = document.querySelectorAll('.ad-rotating');
+function rotateWidgets() {
+  const rotatingWidgets = document.querySelectorAll('.widget-rotating');
   
-  rotatingAds.forEach(ad => {
-    const adGroup = ad.dataset.adGroup;
-    if (adGroups[adGroup]) {
-      const ads = adGroups[adGroup];
-      const randomAd = ads[Math.floor(Math.random() * ads.length)];
+  rotatingWidgets.forEach(widget => {
+    const widgetGroup = widget.dataset.widgetGroup;
+    if (widgetGroups[widgetGroup]) {
+      const widgets = widgetGroups[widgetGroup];
+      const randomWidget = widgets[Math.floor(Math.random() * widgets.length)];
       
-      const title = ad.querySelector('h4');
-      const content = ad.querySelector('p');
-      const button = ad.querySelector('.btn-small');
+      const title = widget.querySelector('h4');
+      const content = widget.querySelector('p');
+      const button = widget.querySelector('.btn-small');
       
-      if (title) title.textContent = randomAd.title;
-      if (content) content.textContent = randomAd.content;
+      if (title) title.textContent = randomWidget.title;
+      if (content) content.textContent = randomWidget.content;
       if (button) {
-        button.textContent = randomAd.button;
-        button.href = randomAd.link;
+        button.textContent = randomWidget.button;
+        button.href = randomWidget.link;
       }
     }
   });
 }
 
-// Rotate ads on page load and every 12 seconds
-document.addEventListener('DOMContentLoaded', rotateAds);
-setInterval(rotateAds, 12000);
+// Rotate widgets on page load and every 12 seconds
+document.addEventListener('DOMContentLoaded', rotateWidgets);
+setInterval(rotateWidgets, 12000);
 </script>
 </body>
 </html>

@@ -436,9 +436,6 @@ nav a:hover::after {
   min-width: 0; /* Allow shrinking */
   word-wrap: break-word;
   overflow-wrap: break-word;
-  display: block !important; /* Force visibility */
-  background: rgba(255, 0, 0, 0.1); /* Temporary debug background */
-  border: 2px solid red; /* Temporary debug border */
 }
 
 .sidebar-right {
@@ -446,9 +443,6 @@ nav a:hover::after {
   min-width: 0; /* Allow shrinking */
   word-wrap: break-word;
   overflow-wrap: break-word;
-  display: block !important; /* Force visibility */
-  background: rgba(0, 0, 255, 0.1); /* Temporary debug background */
-  border: 2px solid blue; /* Temporary debug border */
 }
 
 /* Main Layout */
@@ -476,7 +470,7 @@ nav a:hover::after {
   max-width: none;
 }
 
-.ad-block {
+.info-widget {
   background: var(--card-secondary);
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -490,35 +484,35 @@ nav a:hover::after {
   min-width: 0;
 }
 
-/* Different ad sizes */
-.ad-block.small-ad {
+/* Different widget sizes */
+.info-widget.small-widget {
   padding: 0.75rem;
   margin-bottom: 1rem;
   background: var(--accent);
   border-left: 3px solid var(--brand-accent);
 }
 
-.ad-block.large-ad {
+.info-widget.large-widget {
   padding: 1.5rem;
   margin-bottom: 2rem;
   background: linear-gradient(135deg, var(--card-secondary) 0%, var(--card) 100%);
   border: 2px solid var(--brand-light);
 }
 
-.ad-block.small-ad h5 {
+.info-widget.small-widget h5 {
   margin: 0 0 0.5rem 0;
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--brand-dark);
 }
 
-.ad-block.small-ad p {
+.info-widget.small-widget p {
   margin: 0;
   font-size: 0.75rem;
   line-height: 1.3;
 }
 
-.ad-block.large-ad h4 {
+.info-widget.large-widget h4 {
   color: var(--brand-dark);
   font-size: 1rem;
   margin-bottom: 1rem;
@@ -542,12 +536,12 @@ nav a:hover::after {
   color: var(--warning);
 }
 
-.ad-block:hover {
+.info-widget:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.ad-block h4 {
+.info-widget h4 {
   margin: 0 0 0.75rem 0;
   color: var(--brand-dark);
   font-size: 0.9rem;
@@ -556,7 +550,7 @@ nav a:hover::after {
   word-wrap: break-word;
 }
 
-.ad-block p {
+.info-widget p {
   margin: 0 0 1rem 0;
   font-size: 0.85rem;
   line-height: 1.4;
@@ -1005,7 +999,7 @@ footer a:hover {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   .three-column-container {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -1024,7 +1018,7 @@ footer a:hover {
     gap: 1rem;
   }
   
-  .ad-block {
+  .info-widget {
     margin-bottom: 0;
   }
   
