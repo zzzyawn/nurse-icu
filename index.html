@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nurse.ICU – Nursing Resources</title>
+  <meta name="description" content="Nurse.ICU: concise nursing resources, links, and updates.">
+  <link rel="stylesheet" href="assets/style.css">
+  <!-- AdSense/Analytics placeholder:
+       Paste your AdSense verification script here between <head> tags AFTER approval.
+       Example:
+       <script data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  -->
+</head>
+<body>
+<header class="site">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="Nurse.ICU home">
+      <span class="logo">ICU</span>
+      <div>
+        <strong>Nurse.ICU</strong><br>
+        <span class="small">Nursing resources & links</span>
+      </div>
+    </a>
+    <nav>
+      <a href="index.html" id="nav-home">Home</a>
+      <a href="resources.html" id="nav-res">Resources</a>
+      <a href="about.html" id="nav-about">About</a>
+      <a href="contact.html" id="nav-contact">Contact</a>
+      <a href="privacy.html" id="nav-privacy">Privacy</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="container">
+
+    <h1>Nurse.ICU</h1>
+    <p class="lead">Concise nursing resources, links, and updates. Built as a lightweight reference hub.</p>
+
+    <div class="ads">
+      <strong>Ad slot</strong><br>
+      Paste a responsive AdSense unit here after approval.
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Quick Links</h2>
+        <ul class="clean">
+          <li><a href="resources.html">Nursing Resources Directory</a></li>
+          <li><a href="about.html">About Nurse.ICU</a></li>
+          <li><a href="privacy.html">Privacy & Cookies</a></li>
+        </ul>
+        <p class="small">Tip: bookmark this site for fast access during shifts.</p>
+      </div>
+      <div class="card">
+        <h2>What is this?</h2>
+        <p>A fast, ad‑supported landing page with curated links for nurses and learners. It avoids medical advice and focuses on reputable references.</p>
+        <p class="small"><strong>Disclaimer:</strong> This site provides links for information only and does not substitute for professional medical judgment or institutional policy.</p>
+      </div>
+    </div>
+
+    <div class="ads">
+      <strong>Ad slot</strong><br>
+      Paste a responsive AdSense unit here after approval.
+    </div>
+
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div>© 2025 Nurse.ICU</div>
+    <div><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="ads.txt">ads.txt</a> · <a href="sitemap.xml">Sitemap</a></div>
+  </div>
+</footer>
+<script>
+// simple nav highlighter
+const map = {"index.html":"nav-home","resources.html":"nav-res","about.html":"nav-about","contact.html":"nav-contact","privacy.html":"nav-privacy"};
+const path = location.pathname.split('/').pop() || "index.html";
+const el = document.getElementById(map[path]||"nav-home"); if(el) el.classList.add("nav-active");
+</script>
+</body>
+</html>

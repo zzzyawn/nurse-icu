@@ -1,0 +1,34 @@
+
+/* Basic, clean, responsive CSS */
+:root{--bg:#f9fafb;--fg:#1f2937;--brand:#0b6fa4;--muted:#6b7280;--card:#ffffff;--border:#e5e7eb;}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6;background:var(--bg);color:var(--fg)}
+.container{max-width:980px;margin:0 auto;padding:1rem}
+header.site{background:var(--brand);color:#fff}
+header .container{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:.75rem;text-decoration:none;color:#fff}
+.brand .logo{width:38px;height:38px;border-radius:8px;background:#fff;display:inline-flex;align-items:center;justify-content:center;color:var(--brand);font-weight:800}
+nav a{color:#fff;text-decoration:none;margin:0 .5rem;padding:.4rem .6rem;border-radius:.4rem}
+nav a:hover{background:rgba(255,255,255,.18)}
+main .container{padding:2rem 1rem}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1rem;margin:1rem 0}
+h1,h2,h3{line-height:1.25}
+h1{font-size:2rem;margin:.5rem 0 1rem}
+h2{font-size:1.4rem;margin:1.5rem 0 .75rem}
+.lead{color:var(--muted)}
+.btn{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;padding:.6rem .9rem;border-radius:.5rem}
+.btn:hover{opacity:.92}
+footer{border-top:1px solid var(--border);color:var(--muted);font-size:.9rem}
+footer .container{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:1.5rem 1rem}
+.grid{display:grid;grid-template-columns:1fr;gap:1rem}
+@media(min-width:768px){.grid{grid-template-columns:repeat(2,1fr)}}
+.ads{border:2px dashed var(--border);border-radius:10px;padding:1rem;text-align:center;background:#f3f4f6;color:#6b7280}
+.nav-active{background:rgba(255,255,255,.18)}
+.small{font-size:.9rem;color:var(--muted)}
+ul.clean{list-style:none;padding-left:1rem}
+ul.clean li{margin:.35rem 0}
+code.inline{background:#eef2ff;border:1px solid #e5e7eb;padding:.1rem .3rem;border-radius:.3rem;font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
+table{border-collapse:collapse;width:100%}
+td,th{border:1px solid var(--border);padding:.5rem;text-align:left}
+kbd{background:#111827;color:#fff;border-radius:4px;padding:.15rem .35rem;font-size:.85em}
