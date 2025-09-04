@@ -114,6 +114,8 @@ footer a:hover{color:var(--brand-dark);text-decoration:underline}
 }
 .resource-item:hover{background:#e0f2fe;transform:translateY(-1px)}
 .resource-item h3{margin:0 0 .5rem;color:var(--brand-dark);font-size:1rem}
+.resource-item h3 a{color:var(--brand-dark);text-decoration:none;transition:color 0.2s ease}
+.resource-item h3 a:hover{color:var(--brand);text-decoration:underline}
 .resource-item p{margin:0;font-size:.9rem;color:var(--muted)}
 
 .specialty-highlight{background:linear-gradient(135deg, var(--accent) 0%, #f0f9ff 100%)}
