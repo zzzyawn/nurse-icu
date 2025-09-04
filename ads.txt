@@ -1,3 +1,3 @@
 # ads.txt for Nurse.ICU
-# Replace with your AdSense publisher ID after approval:
-# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+# Google AdSense publisher verification
+google.com, pub-2776445090614629, DIRECT, f08c47fec0942fa0
